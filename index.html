@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>संविधान दिवस 2026 — ई-शपथ एवं प्रमाण पत्र | R.N.T. Group of Colleges, Kapasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Tiro+Devanagari+Hindi:ital@0;1&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --saffron: #ea580c;
+      --navy: #0f2557;
+      --gold: #b45309;
+      --green: #15803d;
+      --bg: #f1f5f9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans Devanagari', system-ui, sans-serif;
+      background: linear-gradient(135deg, #fff7ed 0%, #f8fafc 50%, #f0fdf4 100%);
+      color: #0f172a;
+      padding: 1.5rem 1rem 3rem;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .header-card {
+      background: #ffffff;
+      border-top: 6px solid var(--saffron);
+      border-bottom: 6px solid var(--green);
+      border-radius: 14px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(15, 37, 87, 0.08);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .header-card h1 {
+      margin: 0.25rem 0;
+      color: var(--navy);
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      font-family: 'Cinzel', 'Noto Sans Devanagari', serif;
+    }
+    .header-card p {
+      margin: 0.25rem 0 0;
+      color: #475569;
+      font-weight: 600;
+    }
+    .pledge-box {
+      background: #fffbeb;
+      border: 1.5px solid #fcd34d;
+      border-left: 6px solid var(--saffron);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      font-family: 'Tiro Devanagari Hindi', serif;
+      font-size: 1.12rem;
+      line-height: 1.85;
+      color: #1e293b;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+    .pledge-title {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+    .form-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+      margin-bottom: 1.5rem;
+    }
+    .grid-inputs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    label.field-label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 0.35rem;
+    }
+    input[type="text"], input[type="email"], select {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
+      font-size: 1rem;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--navy);
+    }
+    .oath-check {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      padding: 0.9rem 1rem;
+      border-radius: 8px;
+      margin: 1rem 0 1.25rem;
+      cursor: pointer;
+    }
+    .oath-check input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin-top: 3px;
+      accent-color: var(--green);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .oath-check span {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: #0f172a;
+      line-height: 1.5;
+    }
+    .btn-row {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    button {
+      padding: 0.75rem 1.4rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: transform 0.12s, opacity 0.2s;
+    }
+    button:active { transform: scale(0.98); }
+    button:disabled { opacity: 0.55; cursor: not-allowed; }
+    .btn-primary {
+      background: linear-gradient(90deg, #0f2557, #1e3a8a);
+      color: #ffffff;
+    }
+    .btn-download {
+      background: linear-gradient(90deg, #15803d, #166534);
+      color: #ffffff;
+    }
+    #status {
+      margin-top: 0.85rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .canvas-wrapper {
+      background: #ffffff;
+      padding: 0.75rem;
+      border-radius: 12px;
+      box-shadow: 0 14px 35px rgba(15, 23, 42, 0.14);
+    }
+    canvas {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+    .drive-btn {
+      display: none;
+      padding: 0.72rem 1.2rem;
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1.5px solid #93c5fd;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-card">
+      <h1>R.N.T. GROUP OF COLLEGES, KAPASAN</h1>
+      <p>संविधान दिवस 2026 (26 नवम्बर 2026) — राष्ट्रीय संविधान शपथ एवं ई-प्रमाण पत्र पोर्टल</p>
+    </div>
+
+    <div class="pledge-box">
+      <div class="pledge-title">भारत का संविधान — उद्देशिका (संविधान शपथ)</div>
+      “हम, भारत के लोग, भारत को एक संपूर्ण प्रभुत्व-संपन्न, समाजवादी, पंथनिरपेक्ष, लोकतंत्रात्मक गणराज्य बनाने के लिए, तथा उसके समस्त नागरिकों को: सामाजिक, आर्थिक और राजनैतिक न्याय, विचार, अभिव्यक्ति, विश्वास, धर्म और उपासना की स्वतंत्रता, प्रतिष्ठा और अवसर की समता प्राप्त कराने के लिए, तथा उन सब में व्यक्ति की गरिमा और राष्ट्र की एकता और अखंडता सुनिश्चित करने वाली बंधुता बढ़ाने के लिए दृढ़संकल्प होकर अपनी इस संविधान सभा में आज तारीख 26 नवम्बर, 1949 ई. (मिति मार्गशीर्ष शुक्ला सप्तमी, संवत् दो हजार छह विक्रमी) को एतद्द्वारा इस संविधान को अंगीकृत, अधिनियमित और आत्मार्पित करते हैं।”
+    </div>
+
+    <div class="form-card">
+      <form id="certForm">
+        <div class="grid-inputs">
+          <div>
+            <label class="field-label" for="fullName">पूरा नाम (Full Name) *</label>
+            <input type="text" id="fullName" placeholder="उदाहरण: Pratik Bairagi / प्रतीक बैरागी" required />
+          </div>
+          <div>
+            <label class="field-label" for="designation">श्रेणी / कक्षा (Category / Class)</label>
+            <select id="designation">
+              <option value="विद्यार्थी (Student)">विद्यार्थी (Student)</option>
+              <option value="संकाय सदस्य (Faculty Member)">संकाय सदस्य (Faculty Member)</option>
+              <option value="प्रशासनिक अधिकारी / कर्मचारी (Staff)">प्रशासनिक अधिकारी / कर्मचारी (Staff)</option>
+              <option value="नागरिक (Citizen)">नागरिक (Citizen)</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="email">ईमेल / मोबाइल (Email / Mobile - Optional)</label>
+            <input type="text" id="email" placeholder="Optional for record" />
+          </div>
+        </div>
+
+        <label class="oath-check" for="oathCheckbox">
+          <input type="checkbox" id="oathCheckbox" required />
+          <span>मैं सत्यनिष्ठा से यह प्रतिज्ञा करता/करती हूँ कि मैंने भारत के संविधान की उपर्युक्त शपथ को ध्यानपूर्वक पढ़ा एवं आत्मसात किया है तथा मैं संवैधानिक मूल्यों, कर्तव्यों एवं राष्ट्र की एकता व अखंडता के प्रति सदैव समर्पित रहूँगा/रहूँगी।</span>
+        </label>
+
+        <div class="btn-row">
+          <button type="submit" class="btn-primary" id="submitBtn">शपथ लें एवं प्रमाण पत्र प्राप्त करें</button>
+          <button type="button" class="btn-download" id="downloadPngBtn" disabled>प्रमाण पत्र डाउनलोड करें (PNG)</button>
+          <a id="driveLink" class="drive-btn" href="#" target="_blank" rel="noopener">Google Drive में PDF देखें</a>
+        </div>
+        <div id="status"></div>
+      </form>
+    </div>
+
+    <div class="canvas-wrapper">
+      <canvas id="certCanvas" width="1600" height="1130"></canvas>
+    </div>
+  </div>
+
+  <script>
+    // Replace with your deployed Google Apps Script Web App URL
+    const SCRIPT_URL = "YOUR_APPS_SCRIPT_WEB_APP_URL";
+
+    const canvas = document.getElementById("certCanvas");
+    const ctx = canvas.getContext("2d");
+    const nameInput = document.getElementById("fullName");
+    const roleInput = document.getElementById("designation");
+    const emailInput = document.getElementById("email");
+    const oathCheckbox = document.getElementById("oathCheckbox");
+    const submitBtn = document.getElementById("submitBtn");
+    const downloadBtn = document.getElementById("downloadPngBtn");
+    const statusEl = document.getElementById("status");
+    const driveLink = document.getElementById("driveLink");
+
+    let cleanLogoCanvas = null;
+    let cleanSignCanvas = null;
+    let issuedCertId = "";
+
+    // Load and strip solid black background from RNT_Group_Logo_01-removebg-preview.jpg
+    const logoImg = new Image();
+    logoImg.src = "./RNT_Group_Logo_01-removebg-preview.jpg";
+    logoImg.onload = () => {
+      const off = document.createElement("canvas");
+      off.width = logoImg.width;
+      off.height = logoImg.height;
+      const octx = off.getContext("2d");
+      octx.drawImage(logoImg, 0, 0);
+      const imgData = octx.getImageData(0, 0, off.width, off.height);
+      const d = imgData.data;
+      // Flood-fill from corners so only outer black background becomes transparent (preserves inner black torch/book)
+      const w = off.width, h = off.height;
+      const visited = new Uint8Array(w * h);
+      const stack = [[0, 0], [w - 1, 0], [0, h - 1], [w - 1, h - 1]];
+      while (stack.length) {
+        const [x, y] = stack.pop();
+        if (x < 0 || x >= w || y < 0 || y >= h) continue;
+        const idx = y * w + x;
+        if (visited[idx]) continue;
+        visited[idx] = 1;
+        const p = idx * 4;
+        if (d[p] < 35 && d[p + 1] < 35 && d[p + 2] < 35) {
+          d[p + 3] = 0;
+          stack.push([x + 1, y], [x - 1, y], [x, y + 1], [x, y - 1]);
+        }
+      }
+      octx.putImageData(imgData, 0, 0);
+      cleanLogoCanvas = off;
+      drawCertificate();
+    };
+
+    // Load Principal signature and remove near-white background so it sits cleanly over the seal
+    const signImg = new Image();
+    signImg.src = "./SIgn Pincipal.png";
+    signImg.onload = () => {
+      const off = document.createElement("canvas");
+      off.width = signImg.width;
+      off.height = signImg.height;
+      const octx = off.getContext("2d");
+      octx.drawImage(signImg, 0, 0);
+      const imgData = octx.getImageData(0, 0, off.width, off.height);
+      const d = imgData.data;
+      for (let i = 0; i < d.length; i += 4) {
+        if (d[i] > 235 && d[i + 1] > 235 && d[i + 2] > 235) {
+          d[i + 3] = 0;
+        }
+      }
+      octx.putImageData(imgData, 0, 0);
+      cleanSignCanvas = off;
+      drawCertificate();
+    };
+
+    function drawCornerOrnament(x, y, rot) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.rotate(rot);
+      ctx.strokeStyle = "#b45309";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(0, 55);
+      ctx.lineTo(0, 0);
+      ctx.lineTo(55, 0);
+      ctx.stroke();
+
+      ctx.fillStyle = "#d97706";
+      ctx.beginPath();
+      ctx.arc(10, 10, 4.5, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function drawAshokaChakra(cx, cy, r, alpha) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.strokeStyle = "#1e3a8a";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.arc(cx, cy, r * 0.16, 0, Math.PI * 2);
+      ctx.fillStyle = "#1e3a8a";
+      ctx.fill();
+
+      for (let i = 0; i < 24; i++) {
+        const a = (i * Math.PI) / 12;
+        ctx.beginPath();
+        ctx.moveTo(cx + Math.cos(a) * (r * 0.16), cy + Math.sin(a) * (r * 0.16));
+        ctx.lineTo(cx + Math.cos(a) * r, cy + Math.sin(a) * r);
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    function drawCertificate() {
+      const W = canvas.width;
+      const H = canvas.height;
+      ctx.clearRect(0, 0, W, H);
+
+      // 1. Warm Ivory Parchment Background
+      const bgGrad = ctx.createLinearGradient(0, 0, W, H);
+      bgGrad.addColorStop(0, "#fffdf9");
+      bgGrad.addColorStop(0.5, "#fefce8");
+      bgGrad.addColorStop(1, "#fffaf0");
+      ctx.fillStyle = bgGrad;
+      ctx.fillRect(0, 0, W, H);
+
+      // 2. Subtle Tricolor Top & Bottom Accent Ribbons
+      const stripeH = 14;
+      ctx.fillStyle = "#ea580c"; // Saffron
+      ctx.fillRect(28, 28, W - 56, stripeH);
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(28, 28 + stripeH, W - 56, stripeH);
+      ctx.fillStyle = "#15803d"; // Green
+      ctx.fillRect(28, 28 + stripeH * 2, W - 56, stripeH);
+
+      ctx.fillStyle = "#ea580c";
+      ctx.fillRect(28, H - 28 - stripeH * 3, W - 56, stripeH);
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(28, H - 28 - stripeH * 2, W - 56, stripeH);
+      ctx.fillStyle = "#15803d";
+      ctx.fillRect(28, H - 28 - stripeH, W - 56, stripeH);
+
+      // 3. Royal Navy & Gold Double Frame
+      ctx.strokeStyle = "#0f2557";
+      ctx.lineWidth = 6;
+      ctx.strokeRect(28, 28, W - 56, H - 56);
+
+      ctx.strokeStyle = "#b45309";
+      ctx.lineWidth = 2.5;
+      ctx.strokeRect(42, 42, W - 84, H - 84);
+
+      drawCornerOrnament(54, 82, 0);
+      drawCornerOrnament(W - 54, 82, Math.PI / 2);
+      drawCornerOrnament(W - 54, H - 82, Math.PI);
+      drawCornerOrnament(54, H - 82, -Math.PI / 2);
+
+      // 4. Watermark Ashoka Chakra
+      drawAshokaChakra(W / 2, H / 2 + 25, 220, 0.055);
+
+      // 5. College Logo (Top Left) & Emblem/Badge (Top Right)
+      if (cleanLogoCanvas) {
+        ctx.drawImage(cleanLogoCanvas, 95, 92, 165, 145);
+      }
+
+      // 6. Institutional Header
+      ctx.textAlign = "center";
+      ctx.fillStyle = "#0f2557";
+      ctx.font = "800 40px 'Cinzel', serif";
+      ctx.fillText("R.N.T. GROUP OF COLLEGES, KAPASAN", W / 2 + 45, 145);
+
+      ctx.fillStyle = "#b45309";
+      ctx.font = "600 22px 'Noto Sans Devanagari', sans-serif";
+      ctx.fillText("चित्तौड़गढ़ (राजस्थान) • तमसो मा ज्योतिर्गमय", W / 2 + 45, 182);
+
+      // Divider line under header
+      ctx.strokeStyle = "#d97706";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(310, 205);
+      ctx.lineTo(W - 140, 205);
+      ctx.stroke();
+
+      // 7. Certificate Title Banner
+      ctx.fillStyle = "#ea580c";
+      ctx.font = "700 44px 'Tiro Devanagari Hindi', serif";
+      ctx.fillText("संविधान दिवस – 2026 | शपथ प्रमाण पत्र", W / 2, 275);
+
+      ctx.fillStyle = "#1e3a8a";
+      ctx.font = "700 23px 'Cinzel', serif";
+      ctx.fillText("CERTIFICATE OF CONSTITUTION PLEDGE", W / 2, 312);
+
+      // 8. Recipient Salutation & Name
+      ctx.fillStyle = "#334155";
+      ctx.font = "27px 'Tiro Devanagari Hindi', serif";
+      ctx.fillText("यह प्रमाणित किया जाता है कि", W / 2, 375);
+
+      const displayName = nameInput.value.trim() || "आपका शुभ नाम / YOUR NAME";
+      ctx.fillStyle = "#0f172a";
+      ctx.font = "bold 56px 'Playfair Display', 'Tiro Devanagari Hindi', serif";
+      ctx.fillText(displayName, W / 2, 448);
+
+      // Elegant Gold Underline below Name
+      const nameWidth = Math.min(Math.max(ctx.measureText(displayName).width + 120, 460), 1080);
+      ctx.strokeStyle = "#b45309";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(W / 2 - nameWidth / 2, 468);
+      ctx.lineTo(W / 2 + nameWidth / 2, 468);
+      ctx.stroke();
+
+      // Category tag
+      ctx.fillStyle = "#15803d";
+      ctx.font = "600 22px 'Noto Sans Devanagari', sans-serif";
+      ctx.fillText(`(${roleInput.value})`, W / 2, 505);
+
+      // 9. Hindi Pledge Citation Body
+      ctx.fillStyle = "#1e293b";
+      ctx.font = "26px 'Tiro Devanagari Hindi', serif";
+      const lines = [
+        "ने आज दिनांक 26 नवम्बर 2026 को ‘संविधान दिवस’ के पावन अवसर पर",
+        "भारत के संविधान की उद्देशिका (प्रस्तावना) की सत्यनिष्ठा से शपथ ग्रहण की है",
+        "तथा संवैधानिक आदर्शों, मौलिक कर्तव्यों एवं राष्ट्र की एकता व अखंडता को",
+        "अक्षुण्ण बनाए रखने का संकल्प लिया है।"
+      ];
+      lines.forEach((line, idx) => {
+        ctx.fillText(line, W / 2, 565 + idx * 42);
+      });
+
+      // 10. Footer: Date & Certificate ID (Left) + Principal Signature (Right)
+      ctx.textAlign = "left";
+      ctx.fillStyle = "#334155";
+      ctx.font = "600 22px 'Noto Sans Devanagari', sans-serif";
+      ctx.fillText("दिनांक (Date): 26 नवम्बर 2026", 120, 885);
+
+      ctx.fillStyle = "#64748b";
+      ctx.font = "600 19px monospace";
+      ctx.fillText("Certificate ID: " + (issuedCertId || "RNT-CONST26-PREVIEW"), 120, 922);
+
+      // Gold Emblem Seal near center-bottom
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(W / 2, 875, 58, 0, Math.PI * 2);
+      ctx.fillStyle = "#fef3c7";
+      ctx.fill();
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = "#b45309";
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(W / 2, 875, 48, 0, Math.PI * 2);
+      ctx.setLineDash([4, 4]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.textAlign = "center";
+      ctx.fillStyle = "#92400e";
+      ctx.font = "bold 15px 'Cinzel', serif";
+      ctx.fillText("SAMVIDHAN", W / 2, 868);
+      ctx.fillText("DIWAS", W / 2, 886);
+      ctx.font = "bold 14px sans-serif";
+      ctx.fillText("2026", W / 2, 905);
+      ctx.restore();
+
+      // Principal Signature Block (Right)
+      const signCenterX = W - 290;
+      if (cleanSignCanvas) {
+        ctx.drawImage(cleanSignCanvas, signCenterX - 115, 765, 230, 115);
+      }
+      ctx.strokeStyle = "#0f2557";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(signCenterX - 165, 892);
+      ctx.lineTo(signCenterX + 165, 892);
+      ctx.stroke();
+
+      ctx.textAlign = "center";
+      ctx.fillStyle = "#0f2557";
+      ctx.font = "bold 24px 'Playfair Display', serif";
+      ctx.fillText("Dr. S.N.A. Jaferry", signCenterX, 925);
+
+      ctx.fillStyle = "#334155";
+      ctx.font = "600 20px 'Noto Sans Devanagari', sans-serif";
+      ctx.fillText("Principal, R.N.T. Group of Colleges, Kapasan", signCenterX, 955);
+    }
+
+    // Real-time canvas update as user types or changes role
+    nameInput.addEventListener("input", drawCertificate);
+    roleInput.addEventListener("change", drawCertificate);
+
+    document.getElementById("certForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!oathCheckbox.checked) {
+        statusEl.textContent = "कृपया पहले संविधान शपथ चेकबॉक्स पर टिक करें।";
+        return;
+      }
+      const name = nameInput.value.trim();
+      if (!name) return;
+
+      submitBtn.disabled = true;
+      issuedCertId = "RNT-2026-" + Math.random().toString(36).substring(2, 8).toUpperCase();
+      drawCertificate();
+      downloadBtn.disabled = false;
+      statusEl.textContent = "आपकी शपथ दर्ज हो रही है और प्रमाण पत्र तैयार है...";
+
+      if (SCRIPT_URL && SCRIPT_URL !== "YOUR_APPS_SCRIPT_WEB_APP_URL") {
+        try {
+          const res = await fetch(SCRIPT_URL, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify({
+              name: name,
+              role: roleInput.value,
+              email: emailInput.value.trim(),
+              certId: issuedCertId,
+              event: "Samvidhan Diwas 2026"
+            })
+          });
+          const data = await res.json();
+          if (data.status === "success") {
+            if (data.certId) {
+              issuedCertId = data.certId;
+              drawCertificate();
+            }
+            statusEl.textContent = `बधाई हो ${name}! आपका प्रमाण पत्र (ID: ${issuedCertId}) सफलतापूर्वक जारी एवं सुरक्षित कर लिया गया है।`;
+            if (data.driveUrl) {
+              driveLink.href = data.driveUrl;
+              driveLink.style.display = "inline-block";
+            }
+          } else {
+            statusEl.textContent = `प्रमाण पत्र तैयार है (ID: ${issuedCertId})। आप इसे नीचे से डाउनलोड कर सकते हैं।`;
+          }
+        } catch (err) {
+          statusEl.textContent = `प्रमाण पत्र तैयार है (ID: ${issuedCertId})। डाउनलोड बटन से सेव करें।`;
+        }
+      } else {
+        statusEl.textContent = `बधाई हो ${name}! आपका संविधान शपथ प्रमाण पत्र (ID: ${issuedCertId}) तैयार है।`;
+      }
+
+      submitBtn.disabled = false;
+    });
+
+    downloadBtn.addEventListener("click", () => {
+      const link = document.createElement("a");
+      const safeName = (nameInput.value.trim() || "Samvidhan_Shapath").replace(/\s+/g, "_");
+      link.download = `Samvidhan_Diwas_2026_${safeName}.png`;
+      link.href = canvas.toDataURL("image/png");
+      link.click();
+    });
+
+    // Initial render
+    document.fonts.ready.then(drawCertificate);
+    drawCertificate();
+  </script>
+</body>
+</html>
